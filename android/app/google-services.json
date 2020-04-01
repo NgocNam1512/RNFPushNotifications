@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "13952384723",
+    "firebase_url": "https://test-firebase-89d5d.firebaseio.com",
+    "project_id": "test-firebase-89d5d",
+    "storage_bucket": "test-firebase-89d5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13952384723:android:a6f48b7f15a9db6ea05e26",
+        "android_client_info": {
+          "package_name": "com.onemoretime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13952384723-qrfpk9b80mvvgtab680msjr9flrvgt9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onemoretime",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "13952384723-g6atmiuf44uabg9dmot3q1ultde4bh8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6EjfGK5ty2FooRRjhADylskJ0d0ClcXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13952384723-g6atmiuf44uabg9dmot3q1ultde4bh8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
