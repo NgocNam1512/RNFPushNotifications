@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {View, StyleSheet, Text} from 'react-native'
+import {View, StyleSheet, Text, Button, Alert} from 'react-native'
 import {fcmService} from './src/FCMService'
 
 export default class App extends Component {
@@ -34,8 +34,8 @@ export default class App extends Component {
       channel: channel,
       data: {},
       colorBgIcon: "#1A243B",
-      largeIcon: 'ic_launcher',
-      smallIcon: 'ic_launcher',
+      largeIcon: 'vnu',
+      smallIcon: 'vnu',
       vibrate: true
     }
 
@@ -54,6 +54,31 @@ export default class App extends Component {
     return (
       <View style={container}>
         <Text>Sample React Native Firebase</Text>
+        <Button
+          title="Press me"
+          onPress={() => {
+            const channelObj = {
+              channelId: "SampleChannelID",
+              channelName: "SampleChannelName",
+              channelDes: "SampleChannelDes"
+            }
+            const channel = fcmService.buildChannel(channelObj)
+            const buildNotify = {
+              dataId: 'dataID',
+              title: 'this is title',
+              content: 'hello',
+              sound: 'default',
+              channel: channel,
+              data: {},
+              colorBgIcon: "#1A243B",
+              largeIcon: 'vnu',
+              smallIcon: 'vnu',
+              vibrate: true
+            }
+            const notification = fcmService.buildNotification(buildNotify)
+            fcmService.scheduleNotification(notification, 0, 2)
+          }}
+        />
       </View>
     )
   }
