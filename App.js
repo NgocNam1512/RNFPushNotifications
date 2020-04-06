@@ -54,6 +54,7 @@ export default class App extends Component {
     return (
       <View style={container}>
         <Text>Sample React Native Firebase</Text>
+        <Text>This is a new feature</Text>
         <Button
           title="Press me"
           onPress={() => {
